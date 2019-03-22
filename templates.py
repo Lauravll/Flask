@@ -3,7 +3,7 @@
 from flask import Flask
 from flask import render_template
 
-app = Flask(__name__) #, template_folder = "templatess")#
+app = Flask(__name__, template_folder = "vistas")
 
 @app.route('/')
 def index():
