@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+</head>
+<body>
+    <h4>Hola usuario</h4>
+    <h4>{{nombre}}</h4>
+    <p>{{edad}}</p>
+    <h4>{{list}}</h4>
+
+    <!--Condicion-->
+    {% if edad > 18%}
+        <p>Es mayor de edad</p>
+    {% endif %}
+    <!--Condicion-->
+
+    <!--Ciclo-->
+    {% for item in list %}
+        <p>{{ item }}</p>
+    {% endfor %}
+    <!--Ciclo-->
+</body>
+</html>
